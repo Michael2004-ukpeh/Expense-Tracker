@@ -1,0 +1,149 @@
+@font-face {
+    font-family: Gilroy;
+    src: url(./Gilroy-Light.otf);
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Gilroy, sans-serif;
+}
+
+.modal {
+    display: none;
+    position: absolute;
+    width: 100%;
+    background-color: rgba(17, 14, 14, 0.6);
+    height: 150vh;
+}
+
+.close {
+    color: #eee;
+    font-size: 3rem;
+    position: absolute;
+    right: 3rem;
+    top: 6rem;
+    cursor: pointer;
+}
+
+.successful {
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    width: 300px;
+    background: #fff;
+    padding: 3rem;
+    border-radius: 20px;
+    transform: translate(-50%, -50%);
+}
+
+.wrapper {
+    margin: 0 auto;
+    padding: 3rem 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    width: 70%;
+    max-width: 500px
+}
+
+.history h3,
+.add-transaction h3 {
+    border-bottom: 2px solid black;
+    align-items: flex-start;
+    width: 100%;
+}
+
+.expense-income {
+    display: flex;
+    background: #eee;
+    justify-content: center;
+    flex-direction: row;
+    gap: 1em;
+    align-self: stretch;
+    padding: 1rem;
+    border-collapse: collapse;
+    box-shadow: 0px 5px 5px #222;
+}
+
+.expense-income h3 {
+    border-bottom: none;
+}
+
+.income-box {
+    width: 40%;
+    padding-right: 20px;
+}
+
+.expense-box {
+    padding-left: 12px;
+    width: 40%;
+}
+
+.balance {
+    align-self: flex-start;
+    margin-bottom: 1rem;
+}
+
+.forminput {
+    display: block;
+}
+
+input {
+    margin: .6rem 0;
+    outline: none;
+    border: 0;
+    padding: 1rem;
+    width: 100%;
+    background: #aaa;
+}
+
+.btn {
+    display: block;
+    width: 100%;
+    border: none;
+    padding: 10px;
+    color: #eee;
+    background: #2222d8;
+    border-radius: 8px;
+}
+
+.history {
+    align-self: flex-start;
+    width: 100%;
+}
+
+.transaction {
+    display: flex;
+    justify-content: space-between;
+    box-shadow: 0px 3px 3px #222;
+    background: #eee;
+    padding: 10px;
+    margin-bottom: .5rem;
+}
+
+.expense {
+    color: red;
+}
+
+.income {
+    color: green;
+}
+
+.income-border {
+    border-right: 5px solid green;
+}
+
+.expense-border {
+    border-right: 5px solid red;
+}
+
+.close-item {
+    font-size: 2.5rem;
+    cursor: pointer;
+}

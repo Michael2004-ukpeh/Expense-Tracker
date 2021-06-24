@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Expense Tracker</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+    <div class="modal">
+
+        <h4 class='close'>&times</h4>
+
+        <div class="successful">
+            <h1>Transaction Successful✅</h1>
+        </div>
+    </div>
+    <div class="wrapper">
+        <h2>Expense Tracker</h2>
+        <div class="balance">
+            <h2>YOUR BALANCE</h2>
+            <h3>$ <span class="balance-text">0.00</span></h3>
+        </div>
+        <div class="expense-income">
+            <div class="income-box">
+                <h3>INCOME</h3>
+                <p>$ <span class="income income-amount">00.00</span></p>
+            </div>
+            <div class="expense-box">
+                <h3>EXPENSE</h3>
+                <p>$ <span class="expense expense-amount">00.00</span></p>
+            </div>
+        </div>
+        <div class="history">
+            <h3>History</h3>
+            <div class="history-list">
+                <!-- <div class="transaction">
+                    <p>Hello Gunter</p>
+                    <p class='income'>+42</p>
+                </div> -->
+            </div>
+        </div>
+        <div class="add-transaction">
+            <h3>Add New Transaction</h3>
+            <form class="form">
+                <div class="forminput">
+                    <label for="description">Description</label>
+                    <input type="text" name="description" id="description" placeholder="Enter text..">
+                </div>
+                <div class="forminput">
+                    <label for="amount">Amount
+                                <br>
+                                (-VE = Expense, +VE = Income)
+                            </label>
+                    <input type="text" name="amount" id="amount" placeholder="Enter Amount">
+                </div>
+                <button class="btn" type="submit"> Add Transaction</button>
+
+            </form>
+        </div>
+    </div>
+
+
+
+    <script src="./script.js"></script>
+</body>
+
+</html>
